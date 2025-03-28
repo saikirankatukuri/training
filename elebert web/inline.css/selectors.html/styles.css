@@ -1,0 +1,39 @@
+*{
+    margin: 0%;
+
+}
+.class{
+    background-color: red;
+
+}
+h1{
+    background-color: green;
+}
+#welcome{
+    background-color: blue;
+
+}
+input[type="text"],[type="number"],[type="password"]{
+    height: 140px;
+    width:70px; 
+
+}
+.parent div{
+    background-color: ;
+    background-color: yellow;
+}
+.child-selector>.hi{
+    font-size: small;
+    color: aqua;
+    margin-top: 120px;
+}
+.adjacent-div +p{
+    color: brown;
+}
+
+.general-div ~p{
+    color: blue;
+
+}
+      
+

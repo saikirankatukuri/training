@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car List</title>
+</head>
+<body>
+    <h2>Car List</h2>
+    <table border="1">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Color</th>
+            </tr>
+        </thead>
+        <tbody id="carTable">
+        </tbody>
+    </table>
+
+    <script>
+        const cars = [
+            { name: "maruthi", Price: 1000, color: "red" },
+            { name: "fortiner", Price: 1000, color: "red" },
+            { name: "BMW", Price: 1000, color: "white" },
+            { name: "audi", Price: 2000, color: "blue" },
+            { name: "toyota", Price: 10000, color: "red" }
+        ];
+
+        const tableBody = document.getElementById("carTable");
+
+        cars.forEach(car => {
+            let row = `<tr>
+                        <td>${car.name}</td>
+                        <td>${car.Price}</td>
+                        <td>${car.color}</td>
+                    </tr>`;
+            tableBody.innerHTML += row;
+        });
+    </script>
+</body>
+</html>
